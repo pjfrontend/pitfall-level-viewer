@@ -1,5 +1,8 @@
-Check out the final product:
+# To Do:
+- create a styled button
+
+## Check out the final product:
 https://philjonas.github.io/pitfall-level-viewer/
 
-Available Scripts
+## Available Scripts
 `yarn start` `yarn test` `yarn build` `yarn lint`
