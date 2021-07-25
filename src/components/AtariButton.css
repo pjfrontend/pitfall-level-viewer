@@ -1,0 +1,7 @@
+.atari-button{
+    cursor: pointer;
+    border: 1px dashed lightgreen;
+    color: lightgreen;
+    padding: 4px;
+    user-select: none;
+}

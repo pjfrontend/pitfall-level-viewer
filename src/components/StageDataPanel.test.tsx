@@ -32,7 +32,7 @@ describe('StageDataPanel', () => {
     expect(pitType.innerHTML).toBe('Pit Type: Hole with ladder');
     expect(pathObj.innerHTML).toBe('Path Objects: 1 stationary log');
     expect(underworld.innerHTML).toBe('Underworld: Wall on the right');
-    expect(isVine.innerHTML).toBe('Is there a vine: false');
+    expect(isVine.innerHTML).toBe('Vine: false');
     expect(treePattern.innerHTML).toBe('Tree Pattern: 3');
   });
 });

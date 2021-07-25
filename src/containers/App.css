@@ -1,3 +1,9 @@
 .App {
   text-align: left;
 }
+
+.buttons-wrapper{
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}

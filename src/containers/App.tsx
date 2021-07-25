@@ -7,6 +7,7 @@ import {
 import './App.css';
 import {StageDataPanel} from '../components/StageDataPanel';
 import {NumberDisplay} from '../components/NumberDisplay';
+import {AtariButton} from '../components/AtariButton';
 
 export const App = (): JSX.Element => {
   const [stageData, setStageData] = useState(0xc4);
@@ -25,10 +26,10 @@ export const App = (): JSX.Element => {
   return (
     <div className="App">
       <NumberDisplay screenIndex={screenIndex} />
-      <p>
-        <button onClick={() => goLeft()}>left</button>
-        <button onClick={() => goRight()}>right</button>
-      </p>
+      <div className={'buttons-wrapper'}>
+        <AtariButton label="< Left" onClick={() => goLeft()} />
+        <AtariButton label="> Right" onClick={() => goRight()} />
+      </div>
       <StageDataPanel stageData={stageData} />
     </div>
   );

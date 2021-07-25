@@ -19,7 +19,7 @@ export const StageDataPanel = ({
       <p data-testid="pit-type">Pit Type: {getPitType(stageData)}</p>
       <p data-testid="path-obj">Path Objects: {getPathObject(stageData)}</p>
       <p data-testid="underworld">Underworld: {getUnderworld(stageData)}</p>
-      <p data-testid="is-vine">Is there a vine: {`${getVine(stageData)}`}</p>
+      <p data-testid="is-vine">Vine: {`${getVine(stageData)}`}</p>
       <p data-testid="tree-pat">Tree Pattern: {getTreePattern(stageData)}</p>
     </div>
   );
