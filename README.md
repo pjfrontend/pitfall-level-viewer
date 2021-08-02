@@ -1,5 +1,5 @@
 # To Do:
-- create a styled button
+- create screens showing the changes
 
 ## Check out the final product:
 https://philjonas.github.io/pitfall-level-viewer/
