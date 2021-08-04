@@ -13,7 +13,7 @@ import {
   UNDERGROUND_SCORPION,
   OBSTACLE_SNAKE,
   OBSTACLE_FIRE,
-} from './constants';
+} from '../state/constants';
 
 test('getUnderworld should get the correct wall', () => {
   expect(getUnderworld(0b00000110)).toBe(UNDERGROUND_WALL_L);

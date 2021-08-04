@@ -1,6 +1,6 @@
 import {render} from '@testing-library/react';
 import {StageDataPanelProps, StageDataPanel} from './StageDataPanel';
-import {SCREEN_DATA_001} from '../helpers/constants';
+import {SCREEN_DATA_001} from '../state/constants';
 
 const setup = (props?: StageDataPanelProps) => {
   const utils = render(<StageDataPanel {...props} />);

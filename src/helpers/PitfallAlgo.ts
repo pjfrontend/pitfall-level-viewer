@@ -1,4 +1,4 @@
-import {MASK_1_BYTE, SCREEN_DATA_001} from './constants';
+import {MASK_1_BYTE, SCREEN_DATA_001} from '../state/constants';
 
 export const left_random = (value: number): number => {
   let r = value & MASK_1_BYTE;

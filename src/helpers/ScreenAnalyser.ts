@@ -15,7 +15,7 @@ import {
   PIT_TYPES,
   TREASURES,
   PATH_OBJECTS,
-} from './constants';
+} from '../state/constants';
 
 export const getPitType = (value: number): string => {
   const wallMask = (value >> 3) & MASK_3_BIT;

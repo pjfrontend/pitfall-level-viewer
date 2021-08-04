@@ -4,7 +4,7 @@ import {
   getScreenDataByIndex,
   wrapAroundScreenIndex,
 } from './PitfallAlgo';
-import {SCREEN_DATA_001, SCREEN_DATA_255} from './constants';
+import {SCREEN_DATA_001, SCREEN_DATA_255} from '../state/constants';
 
 test('Going left should return the correct result', () => {
   expect(left_random(SCREEN_DATA_001)).toBe(SCREEN_DATA_255);
