@@ -1,5 +1,4 @@
 import {initialStore, StoreProps, nextLevel} from '../state/Store';
-import {right_random} from '../helpers/PitfallAlgo';
 import {SCREEN_DATA_001, SCREEN_DATA_255} from './constants';
 
 describe('Store', () => {
@@ -21,6 +20,6 @@ describe('Store', () => {
     expect(store.stageData).toBe(SCREEN_DATA_001);
     nextLevel(store, 1);
     expect(store.screenIndex).toBe(2);
-    expect(store.stageData).toBe(SCREEN_DATA_255);
+    expect(store.stageData).toBe(137);
   });
 });

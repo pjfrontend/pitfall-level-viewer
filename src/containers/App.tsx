@@ -1,36 +1,33 @@
-import React, {useState} from 'react';
-import {
-  left_random,
-  right_random,
-  wrapAroundScreenIndex,
-} from '../helpers/PitfallAlgo';
+import React from 'react';
 import './App.css';
 import {StageDataPanel} from '../components/StageDataPanel';
 import {NumberDisplay} from '../components/NumberDisplay';
 import {AtariButton} from '../components/AtariButton';
+import {StoreProps, nextLevel} from '../state/Store';
+import {observer} from 'mobx-react';
 
-export const App = (): JSX.Element => {
-  const [stageData, setStageData] = useState(0xc4);
-  const [screenIndex, setScreenIndex] = useState(1);
+export const App = ({store}: {store: StoreProps}): JSX.Element => {
+  const goLeft = () => nextLevel(store, -1);
+  const goRight = () => nextLevel(store, 1);
 
-  const nextLevel = (
-    newScreenIndex: number,
-    nextFn: (value: number) => number
-  ): void => {
-    setStageData(nextFn(stageData));
-    setScreenIndex(wrapAroundScreenIndex(newScreenIndex));
-  };
-  const goLeft = () => nextLevel(screenIndex - 1, left_random);
-  const goRight = () => nextLevel(screenIndex + 1, right_random);
+  const NumberDisplayView = observer(() => (
+    <NumberDisplay screenIndex={store.screenIndex} />
+  ));
+  const ButtonView = observer(() => (
+    <div className={'buttons-wrapper'}>
+      <AtariButton label="< Left" onClick={() => goLeft()} />
+      <AtariButton label="> Right" onClick={() => goRight()} />
+    </div>
+  ));
+  const StageDataView = observer(() => (
+    <StageDataPanel stageData={store.stageData} />
+  ));
 
   return (
     <div className="App">
-      <NumberDisplay screenIndex={screenIndex} />
-      <div className={'buttons-wrapper'}>
-        <AtariButton label="< Left" onClick={() => goLeft()} />
-        <AtariButton label="> Right" onClick={() => goRight()} />
-      </div>
-      <StageDataPanel stageData={stageData} />
+      <NumberDisplayView />
+      <ButtonView />
+      <StageDataView />
     </div>
   );
 };
