@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import {StageDataPanel} from '../components/StageDataPanel';
-import {NumberDisplay} from '../components/NumberDisplay';
-import {AtariButton} from '../components/AtariButton';
-import {StoreProps, nextLevel} from '../state/Store';
-import {observer} from 'mobx-react';
+import { StageDataPanel } from '../components/StageDataPanel';
+import { NumberDisplay } from '../components/NumberDisplay';
+import { AtariButton } from '../components/AtariButton';
+import { StoreProps, nextLevel } from '../state/Store';
+import { observer } from 'mobx-react';
+import { ScreenDisplay } from '../components/ScreenDisplay';
 
-export const App = ({store}: {store: StoreProps}): JSX.Element => {
+export const App = ({ store }: { store: StoreProps }): JSX.Element => {
   const goLeft = () => nextLevel(store, -1);
   const goRight = () => nextLevel(store, 1);
 
@@ -27,6 +28,7 @@ export const App = ({store}: {store: StoreProps}): JSX.Element => {
     <div className="App">
       <NumberDisplayView />
       <ButtonView />
+      <ScreenDisplay />
       <StageDataView />
     </div>
   );
