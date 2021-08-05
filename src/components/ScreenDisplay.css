@@ -1,0 +1,6 @@
+ canvas {
+    border: 1px solid black;
+    width: 100%;
+    object-fit: contain;
+    max-width: 800px;
+}
