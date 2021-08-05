@@ -1,4 +1,4 @@
-import {initialStore, StoreProps, nextLevel} from '../state/Store';
+import {initialStore, StoreProps, nextLevel} from './Store';
 import {SCREEN_DATA_001, SCREEN_DATA_255} from './constants';
 
 describe('Store', () => {

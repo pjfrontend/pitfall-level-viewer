@@ -1,6 +1,5 @@
 # To Do:
-- create screens showing the changes
--  add sprites
+-  add sprites: obstacles, pits, treasures, vine
 
 ## Check out the final product:
 https://philjonas.github.io/pitfall-level-viewer/

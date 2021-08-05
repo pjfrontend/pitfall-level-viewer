@@ -23,12 +23,15 @@ export const App = ({ store }: { store: StoreProps }): JSX.Element => {
   const StageDataView = observer(() => (
     <StageDataPanel stageData={store.stageData} />
   ));
+  const ScreenView = observer(() => (
+    <ScreenDisplay screenIndex={store.screenIndex} />
+  ));
 
   return (
     <div className="App">
       <NumberDisplayView />
+      <ScreenView />
       <ButtonView />
-      <ScreenDisplay />
       <StageDataView />
     </div>
   );
