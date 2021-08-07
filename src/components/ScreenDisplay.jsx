@@ -1,7 +1,7 @@
-import React, {useRef, useEffect} from 'react';
-import {getScreenDataByIndex} from '../helpers/PitfallAlgo';
-import {ScreenBG, Vine} from '../images';
-import {NumberDisplayProps} from './NumberDisplay';
+// TODO: convert this back to TypeScript?
+import React, { useRef, useEffect } from 'react';
+import { getScreenDataByIndex } from '../helpers/PitfallAlgo';
+import { ScreenBG, Vine } from '../images';
 import {
   getTreePattern,
   getUnderworld,
@@ -14,8 +14,7 @@ import {
 } from '../helpers/CanvasHelpers';
 import './ScreenDisplay.css';
 
-// @ts-ignore
-export const ScreenDisplay = ({screenIndex}: NumberDisplayProps) => {
+export const ScreenDisplay = ({ screenIndex }) => {
   const stageData = getScreenDataByIndex(screenIndex);
   const treeIndex = getTreePattern(stageData);
   const underworldType = getUnderworld(stageData);
@@ -25,9 +24,7 @@ export const ScreenDisplay = ({screenIndex}: NumberDisplayProps) => {
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    // @ts-ignore
-    const context = canvas.getContext('2d');
-    // @ts-ignore
+    // const context = canvas.getContext('2d');
     drawToCanvas(ScreenBG, canvas);
     drawToCanvas(treePatterns[treeIndex], canvas);
     drawToCanvas(underworldPatterns[underworldType], canvas);
