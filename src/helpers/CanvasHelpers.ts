@@ -1,12 +1,4 @@
-import {
-  Tree0,
-  Tree1,
-  Tree2,
-  Tree3,
-  Wall_S,
-  Wall_R,
-  Wall_L,
-} from '../images';
+import {Tree0, Tree1, Tree2, Tree3, Wall_S, Wall_R, Wall_L} from '../images';
 import {
   UNDERGROUND_SCORPION,
   UNDERGROUND_WALL_R,
@@ -30,7 +22,7 @@ export const drawToCanvas = (img: HTMLImageElement, canvas) =>
     );
 export const treePatterns = [Tree0, Tree1, Tree2, Tree3];
 
-export const underworldPatterns: { [id: string]: HTMLImageElement } = {
+export const underworldPatterns: {[id: string]: HTMLImageElement} = {
   [UNDERGROUND_SCORPION]: Wall_S,
   [UNDERGROUND_WALL_R]: Wall_R,
   [UNDERGROUND_WALL_L]: Wall_L,

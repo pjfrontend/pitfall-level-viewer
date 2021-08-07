@@ -1,8 +1,12 @@
-import React, { useRef, useEffect } from 'react';
-import { getScreenDataByIndex } from '../helpers/PitfallAlgo';
-import { ScreenBG } from '../images';
-import { NumberDisplayProps } from './NumberDisplay';
-import { getTreePattern, getUnderworld } from '../helpers/ScreenAnalyser';
+import React, {useRef, useEffect} from 'react';
+import {getScreenDataByIndex} from '../helpers/PitfallAlgo';
+import {ScreenBG, Vine} from '../images';
+import {NumberDisplayProps} from './NumberDisplay';
+import {
+  getTreePattern,
+  getUnderworld,
+  getVine,
+} from '../helpers/ScreenAnalyser';
 import {
   drawToCanvas,
   treePatterns,
@@ -11,10 +15,11 @@ import {
 import './ScreenDisplay.css';
 
 // @ts-ignore
-export const ScreenDisplay = ({ screenIndex }: NumberDisplayProps) => {
+export const ScreenDisplay = ({screenIndex}: NumberDisplayProps) => {
   const stageData = getScreenDataByIndex(screenIndex);
   const treeIndex = getTreePattern(stageData);
   const underworldType = getUnderworld(stageData);
+  const isVine = getVine(stageData);
 
   const canvasRef = useRef(null);
 
@@ -26,6 +31,9 @@ export const ScreenDisplay = ({ screenIndex }: NumberDisplayProps) => {
     drawToCanvas(ScreenBG, canvas);
     drawToCanvas(treePatterns[treeIndex], canvas);
     drawToCanvas(underworldPatterns[underworldType], canvas);
+    if (isVine) {
+      drawToCanvas(Vine, canvas);
+    }
   }, [screenIndex]);
 
   return (

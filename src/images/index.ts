@@ -6,3 +6,4 @@ export * from './tree3';
 export * from './wall_l';
 export * from './wall_r';
 export * from './wall_s';
+export * from './vine';
