@@ -15,6 +15,12 @@ import {
   PathCroc,
   PathSand,
   PathTar,
+  Obs1Log,
+  Obs2LogA,
+  Obs2LogC,
+  Obs3Log,
+  ObsFire,
+  ObsSnake,
 } from '../images';
 import {
   UNDERGROUND_SCORPION,
@@ -71,14 +77,14 @@ export const pathObjectPatterns = {
   [TREASURE_MONEY]: Money,
   [TREASURE_RING]: Ring,
   [OBSTACLE_NONE]: null,
-  [OBSTACLE_R_LOG]: null, // TODO: add image later
-  [OBSTACLE_S_LOG]: null, // TODO: add image later
-  [OBSTACLE_2_A_LOGS]: null, // TODO: add image later
-  [OBSTACLE_2_C_LOGS]: null, // TODO: add image later
-  [OBSTACLE_3_R_LOGS]: null, // TODO: add image later
-  [OBSTACLE_3_S_LOGS]: null, // TODO: add image later
-  [OBSTACLE_FIRE]: null, // TODO: add image later
-  [OBSTACLE_SNAKE]: null, // TODO: add image later
+  [OBSTACLE_R_LOG]: Obs1Log,
+  [OBSTACLE_S_LOG]: Obs1Log,
+  [OBSTACLE_2_A_LOGS]: Obs2LogA,
+  [OBSTACLE_2_C_LOGS]: Obs2LogC,
+  [OBSTACLE_3_R_LOGS]: Obs3Log,
+  [OBSTACLE_3_S_LOGS]: Obs3Log,
+  [OBSTACLE_FIRE]: ObsFire,
+  [OBSTACLE_SNAKE]: ObsSnake,
 };
 
 export const pitTypePatterns = {
