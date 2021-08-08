@@ -7,12 +7,14 @@ import {
   getUnderworld,
   getVine,
   getPathObject,
+  getPitType,
 } from '../helpers/ScreenAnalyser';
 import {
   drawToCanvas,
   treePatterns,
   underworldPatterns,
   pathObjectPatterns,
+  pitTypePatterns,
 } from '../helpers/CanvasHelpers';
 import './ScreenDisplay.css';
 
@@ -23,6 +25,7 @@ export const ScreenDisplay = ({screenIndex}) => {
   const isVine = getVine(stageData);
   const objType = getPathObject(stageData);
   const objImage = pathObjectPatterns[objType];
+  const pitType = getPitType(stageData);
 
   const canvasRef = useRef(null);
 
@@ -30,7 +33,7 @@ export const ScreenDisplay = ({screenIndex}) => {
     const canvas = canvasRef.current;
     drawToCanvas(ScreenBG, canvas);
     drawToCanvas(treePatterns[treeIndex], canvas);
-    drawToCanvas(underworldPatterns[underworldType], canvas);
+    drawToCanvas(pitTypePatterns[pitType], canvas);
     drawToCanvas(underworldPatterns[underworldType], canvas);
     if (objImage) {
       drawToCanvas(objImage, canvas);

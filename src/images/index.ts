@@ -11,3 +11,8 @@ export * from './t_gold';
 export * from './t_silver';
 export * from './t_money';
 export * from './t_ring';
+export * from './path1hole';
+export * from './path3holes';
+export * from './pathCroc';
+export * from './pathSand';
+export * from './pathTar';

@@ -10,6 +10,11 @@ import {
   Silver,
   Money,
   Ring,
+  Path1Hole,
+  Path3Holes,
+  PathCroc,
+  PathSand,
+  PathTar,
 } from '../images';
 import {
   UNDERGROUND_SCORPION,
@@ -77,12 +82,12 @@ export const pathObjectPatterns = {
 };
 
 export const pitTypePatterns = {
-  [PIT_1_HOLE]: null, // TODO: add image later
-  [PIT_3_HOLES]: null, // TODO: add image later
-  [PIT_CROC]: null, // TODO: add image later
-  [PIT_QUICK_VINE]: null, // TODO: add image later
-  [PIT_SHIFT_QUICK]: null, // TODO: add image later
-  [PIT_SHIFT_TAR]: null, // TODO: add image later
-  [PIT_TAR_VINE]: null, // TODO: add image later
-  [PIT_TREASURE]: null, // TODO: add image later
+  [PIT_1_HOLE]: Path1Hole,
+  [PIT_3_HOLES]: Path3Holes,
+  [PIT_CROC]: PathCroc,
+  [PIT_QUICK_VINE]: PathSand,
+  [PIT_SHIFT_QUICK]: PathSand,
+  [PIT_SHIFT_TAR]: PathTar,
+  [PIT_TAR_VINE]: PathTar,
+  [PIT_TREASURE]: PathTar,
 };
