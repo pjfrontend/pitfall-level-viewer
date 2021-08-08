@@ -1,5 +1,13 @@
 # To Do:
--  add sprites: obstacles, pits, treasures, vine
+-  add sprites:
+pit 1, 3 holes
+croc
+quicksand
+tar pit
+
+1,2,3 logs
+fire 
+snake
 
 ## Check out the final product:
 https://philjonas.github.io/pitfall-level-viewer/

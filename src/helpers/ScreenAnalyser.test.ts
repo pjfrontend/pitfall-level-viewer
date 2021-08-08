@@ -13,6 +13,7 @@ import {
   UNDERGROUND_SCORPION,
   OBSTACLE_SNAKE,
   OBSTACLE_FIRE,
+  TREASURE_SILVER,
 } from '../state/constants';
 
 test('getUnderworld should get the correct wall', () => {
@@ -29,6 +30,7 @@ test('getPitType should get the correct scene', () => {
 test('getPathObject should get the correct object', () => {
   expect(getPathObject(0b01000111)).toBe(OBSTACLE_SNAKE);
   expect(getPathObject(0b10001110)).toBe(OBSTACLE_FIRE);
+  expect(getPathObject(0b11101101)).toBe(TREASURE_SILVER);
 });
 
 test('getTreePattern should get the correct tree pattern', () => {

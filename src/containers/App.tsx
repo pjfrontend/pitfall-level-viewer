@@ -15,7 +15,7 @@ export const App = ({store}: {store: StoreProps}): JSX.Element => {
     <NumberDisplay screenIndex={store.screenIndex} />
   ));
   const ButtonView = observer(() => (
-    <div className={'buttons-wrapper'}>
+    <div className="buttons-wrapper">
       <AtariButton label="< Left" onClick={() => goLeft()} />
       <AtariButton label="> Right" onClick={() => goRight()} />
     </div>

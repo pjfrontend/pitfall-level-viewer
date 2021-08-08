@@ -7,3 +7,7 @@ export * from './wall_l';
 export * from './wall_r';
 export * from './wall_s';
 export * from './vine';
+export * from './t_gold';
+export * from './t_silver';
+export * from './t_money';
+export * from './t_ring';

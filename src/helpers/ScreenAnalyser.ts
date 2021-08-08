@@ -28,7 +28,7 @@ export const isTreasureScene = (value: number): boolean => {
 
 export const isPathObject = (value: number): boolean => {
   const pit = getPitType(value);
-  return pit !== PIT_CROC && pit !== PIT_TREASURE;
+  return pit !== PIT_CROC;
 };
 
 export const isWall = (value: number): boolean => {
