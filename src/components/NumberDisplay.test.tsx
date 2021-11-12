@@ -1,7 +1,7 @@
 import {render} from '@testing-library/react';
 import {NumberDisplayProps, NumberDisplay} from './NumberDisplay';
 
-const setup = (props?: NumberDisplayProps) => {
+const setup = (props: NumberDisplayProps) => {
   const utils = render(<NumberDisplay {...props} />);
   const screen = utils.getByTestId('scr');
   const dec = utils.getByTestId('dec');

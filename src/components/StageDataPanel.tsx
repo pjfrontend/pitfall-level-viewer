@@ -8,7 +8,7 @@ import {
 } from '../helpers/ScreenAnalyser';
 
 export interface StageDataPanelProps {
-  stageData: number;
+  stageData?: number;
 }
 
 export const StageDataPanel = ({

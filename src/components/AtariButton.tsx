@@ -2,7 +2,7 @@ import React from 'react';
 import './AtariButton.css';
 
 export interface AtariButtonProps {
-  label: string;
+  label?: string;
   onClick?: () => void;
 }
 
