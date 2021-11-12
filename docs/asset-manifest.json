@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/pitfall-level-viewer/static/css/main.521a35a1.chunk.css",
+    "main.js": "/pitfall-level-viewer/static/js/main.ab0ac73b.chunk.js",
+    "main.js.map": "/pitfall-level-viewer/static/js/main.ab0ac73b.chunk.js.map",
+    "runtime-main.js": "/pitfall-level-viewer/static/js/runtime-main.9913e64a.js",
+    "runtime-main.js.map": "/pitfall-level-viewer/static/js/runtime-main.9913e64a.js.map",
+    "static/js/2.811597d3.chunk.js": "/pitfall-level-viewer/static/js/2.811597d3.chunk.js",
+    "static/js/2.811597d3.chunk.js.map": "/pitfall-level-viewer/static/js/2.811597d3.chunk.js.map",
+    "index.html": "/pitfall-level-viewer/index.html",
+    "static/css/main.521a35a1.chunk.css.map": "/pitfall-level-viewer/static/css/main.521a35a1.chunk.css.map",
+    "static/js/2.811597d3.chunk.js.LICENSE.txt": "/pitfall-level-viewer/static/js/2.811597d3.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/pitfall-level-viewer/static/media/AtariClassic.9ce53700.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9913e64a.js",
+    "static/js/2.811597d3.chunk.js",
+    "static/css/main.521a35a1.chunk.css",
+    "static/js/main.ab0ac73b.chunk.js"
+  ]
+}
