@@ -54,7 +54,7 @@ Explore the Pitfall Level Viewer in action: [https://philjonas.github.io/pitfall
 
 * `src/`: Main source code directory
 * `public/`: Static assets and HTML template
-* `docs/`: Documentation and additional resources
+* `docs/`: Live version (via GitHub Pages)
 * `.vscode/`: Visual Studio Code workspace settings
 
 ## Contributing
